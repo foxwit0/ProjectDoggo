@@ -1,56 +1,56 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
     public static PlayerMovement instance;
 
     public float fallSpeed;
     public float horizontalMoveSpeed;
+    public float speedRatio;
 
-    public Rigidbody2D rb;
+    private Rigidbody2D rb;
 
     private float verticalMovement;
     private float horizontalMovement;
     private Vector3 velocity = Vector3.zero;
-    private float multiplierReducedSpeed=0.75f;
-    private float multiplierTurboSpeed=1.5f;
 
-
-    private void Awake() {
-        if(instance!=null) {
-            Debug.LogWarning("Il y a plus d'une instance de PlayerMovement en jeu") ;
+    private void Awake() 
+    {
+        if(instance != null) 
+        {
+            Debug.LogError("Il y a plus d'une instance de PlayerMovement en jeu") ;
             return;
         }
-        instance=this;
+        instance = this;
     }
 
-
-    void Start()
+    private void Start() 
     {
-        
+        rb = transform.GetComponent<Rigidbody2D>();
     }
 
 
-    void Update()
+    private void Update()
     {
-        horizontalMovement = Input.GetAxis("Horizontal")*horizontalMoveSpeed*Time.fixedDeltaTime; // Le fixedDeltaTime est nécessaire pour synchroniser le mouvement avec le FixedUpdate. Attention, comme il y a un input et de la physique, il est nécessaire de laisser cette partie dans Update.
+        float modifierSpeed = 1f;
+        horizontalMovement = Input.GetAxis("Horizontal") * horizontalMoveSpeed * Time.fixedDeltaTime; // Le fixedDeltaTime est nécessaire pour synchroniser le mouvement avec le FixedUpdate. Attention, comme il y a un input et de la physique, il est nécessaire de laisser cette partie dans Update.
         
-        if(Input.GetAxis("Vertical")>0.1) // Le joueur essaie de ralentir
+
+        if(Input.GetAxis("Vertical") > 0.1f) // Le joueur ralentit
         {
-            verticalMovement = -multiplierReducedSpeed*fallSpeed*Time.fixedDeltaTime; // Fonctionnement sans gravité. Le - permet d'input une valeur absolue mais d'avoir le déplacement dans le bon sens.
-        } else if (Input.GetAxis("Vertical")<-0.1) //Le joueur essaie d'accélérer
+            modifierSpeed *= 1 - speedRatio;
+        } 
+        else if (Input.GetAxis("Vertical") < -0.1f) //Le joueur accélère
         {
-            verticalMovement = -multiplierTurboSpeed*fallSpeed*Time.fixedDeltaTime; // Fonctionnement sans gravité. Le - permet d'input une valeur absolue mais d'avoir le déplacement dans le bon sens.
-        } else {
-            verticalMovement = -fallSpeed*Time.fixedDeltaTime; // Fonctionnement sans gravité. Le - permet d'input une valeur absolue mais d'avoir le déplacement dans le bon sens.
-        }
+            modifierSpeed *= 1 + speedRatio;
+        } 
+
+        verticalMovement = -1 * modifierSpeed * fallSpeed * Time.fixedDeltaTime; //Le -1 permet d'avoir un mouvement vers le bas
         
     }
 
-    private void FixedUpdate() {
+    private void FixedUpdate() 
+    {
         MovePlayer(horizontalMovement, verticalMovement); // Calcule la position du joueur en permanence, même quand les fps sont bas.
     }
 

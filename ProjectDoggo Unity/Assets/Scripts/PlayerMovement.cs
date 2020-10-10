@@ -8,7 +8,9 @@ public class PlayerMovement : MonoBehaviour
     public float horizontalMoveSpeed;
     public float speedRatio;
 
-    private Rigidbody2D rb;
+    [HideInInspector] public Rigidbody2D rb;
+    [HideInInspector] public SpriteRenderer spriteRenderer;
+    [HideInInspector] public BoxCollider2D boxCollider;
 
     private float verticalMovement;
     private float horizontalMovement;
@@ -27,6 +29,8 @@ public class PlayerMovement : MonoBehaviour
     private void Start() 
     {
         rb = transform.GetComponent<Rigidbody2D>();
+        spriteRenderer = transform.GetComponent<SpriteRenderer>();
+        boxCollider = transform.GetComponent<BoxCollider2D>();
     }
 
 
@@ -45,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
             modifierSpeed *= 1 + speedRatio;
         } 
 
-        verticalMovement = -1 * modifierSpeed * fallSpeed * Time.fixedDeltaTime; //Le -1 permet d'avoir un mouvement vers le bas
+        verticalMovement = -1 * modifierSpeed * fallSpeed * Time.fixedDeltaTime; // Le -1 permet d'avoir un mouvement vers le bas
         
     }
 

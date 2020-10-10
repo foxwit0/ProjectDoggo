@@ -161,7 +161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1315128414}
-  timeOffset: 0.1
+  timeOffset: 0
   posOffset: {x: 0, y: -8, z: -10}
 --- !u!20 &519420031
 Camera:
@@ -473,6 +473,7 @@ GameObject:
   - component: {fileID: 1315128415}
   - component: {fileID: 1315128418}
   - component: {fileID: 1315128417}
+  - component: {fileID: 1315128419}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -585,13 +586,28 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
+  m_Material: {fileID: 6200000, guid: 382d9e4277913554d899b5da1a3104eb, type: 2}
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1315128419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315128414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b052923addaa4f84985baaddd6b3f680, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallSpeed: 500
+  horizontalMoveSpeed: 500
+  rb: {fileID: 1315128418}
 --- !u!1 &1428934078
 GameObject:
   m_ObjectHideFlags: 0

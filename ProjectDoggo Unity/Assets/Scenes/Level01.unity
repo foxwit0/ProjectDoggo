@@ -606,7 +606,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b052923addaa4f84985baaddd6b3f680, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallSpeed: 500
+  fallSpeed: 800
   horizontalMoveSpeed: 500
   speedRatio: 0.5
   rb: {fileID: 0}

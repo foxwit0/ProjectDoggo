@@ -42,14 +42,14 @@ public class PlayerMovement : MonoBehaviour
 
         if(Input.GetAxis("Vertical") > 0.1f) // Le joueur ralentit
         {
-            modifierSpeed *= 1 - speedRatio;
+            modifierSpeed *= 1f - speedRatio;
         } 
         else if (Input.GetAxis("Vertical") < -0.1f) //Le joueur accélère
         {
-            modifierSpeed *= 1 + speedRatio;
+            modifierSpeed *= 1f + speedRatio;
         } 
 
-        verticalMovement = -1 * modifierSpeed * fallSpeed * Time.fixedDeltaTime; // Le -1 permet d'avoir un mouvement vers le bas
+        verticalMovement = -1f * modifierSpeed * fallSpeed * Time.fixedDeltaTime; // Le -1 permet d'avoir un mouvement vers le bas
         
     }
 

@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         float modifierSpeed = 1f;
-        horizontalMovement = Input.GetAxis("Horizontal") * horizontalMoveSpeed * Time.fixedDeltaTime; // Le fixedDeltaTime est nécessaire pour synchroniser le mouvement avec le FixedUpdate. Attention, comme il y a un input et de la physique, il est nécessaire de laisser cette partie dans Update.
+        horizontalMovement = Input.GetAxis("Horizontal") * horizontalMoveSpeed; // Le fixedDeltaTime est nécessaire pour synchroniser le mouvement avec le FixedUpdate. Attention, comme il y a un input et de la physique, il est nécessaire de laisser cette partie dans Update.
         
 
         if(Input.GetAxis("Vertical") > 0.1f) // Le joueur ralentit
@@ -49,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
             modifierSpeed *= 1f + speedRatio;
         } 
 
-        verticalMovement = -1f * modifierSpeed * fallSpeed * Time.fixedDeltaTime; // Le -1 permet d'avoir un mouvement vers le bas
+        verticalMovement = -1f * modifierSpeed * fallSpeed; // Le -1 permet d'avoir un mouvement vers le bas
         
     }
 
@@ -61,6 +61,7 @@ public class PlayerMovement : MonoBehaviour
     void MovePlayer(float _horizontalMovement, float _verticalMovement)
     {
         Vector3 targetVelocity = new Vector2(_horizontalMovement,_verticalMovement);
-        rb.velocity = Vector3.SmoothDamp(rb.velocity,targetVelocity, ref velocity, 0.05f); // Fait graduellement passer la vitesse du joueur de la précédente à la nouvelle.
+        //rb.velocity = Vector3.SmoothDamp(rb.velocity,targetVelocity, ref velocity, 0.05f); // Fait graduellement passer la vitesse du joueur de la précédente à la nouvelle.
+        rb.velocity = targetVelocity * Time.fixedDeltaTime;
     }
 }

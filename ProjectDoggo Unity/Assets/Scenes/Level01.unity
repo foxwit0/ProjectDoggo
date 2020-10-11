@@ -161,7 +161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1315128414}
-  timeOffset: 0
+  timeOffset: 0.05
   posOffset: {x: 0, y: -8, z: -10}
 --- !u!20 &519420031
 Camera:

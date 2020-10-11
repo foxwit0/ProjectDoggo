@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     private float horizontalMovement;
     private Vector3 velocity = Vector3.zero;
 
+    #region Singleton
     private void Awake() 
     {
         if(instance != null) 
@@ -25,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
         }
         instance = this;
     }
+    #endregion
 
     private void Start() 
     {
@@ -35,11 +37,13 @@ public class PlayerMovement : MonoBehaviour
 
 
     private void Update()
-    {
-        float modifierSpeed = 1f;
+    {        
+
         horizontalMovement = Input.GetAxis("Horizontal") * horizontalMoveSpeed; // Le fixedDeltaTime est nécessaire pour synchroniser le mouvement avec le FixedUpdate. Attention, comme il y a un input et de la physique, il est nécessaire de laisser cette partie dans Update.
         
 
+        #region VerticalSpeedCalculation
+        float modifierSpeed = 1f;
         if(Input.GetAxis("Vertical") > 0.1f) // Le joueur ralentit
         {
             modifierSpeed *= 1f - speedRatio;
@@ -50,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
         } 
 
         verticalMovement = -1f * modifierSpeed * fallSpeed; // Le -1 permet d'avoir un mouvement vers le bas
-        
+        #endregion
     }
 
     private void FixedUpdate() 
@@ -61,7 +65,7 @@ public class PlayerMovement : MonoBehaviour
     void MovePlayer(float _horizontalMovement, float _verticalMovement)
     {
         Vector3 targetVelocity = new Vector2(_horizontalMovement,_verticalMovement);
-        //rb.velocity = Vector3.SmoothDamp(rb.velocity,targetVelocity, ref velocity, 0.05f); // Fait graduellement passer la vitesse du joueur de la précédente à la nouvelle.
+
         rb.velocity = targetVelocity * Time.fixedDeltaTime;
     }
 }

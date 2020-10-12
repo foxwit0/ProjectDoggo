@@ -7,7 +7,8 @@ public class PlayerDeath : MonoBehaviour
 
     private void Awake()
     {
-        if(instance != null){
+        if(instance != null)
+        {
             Debug.LogWarning("Il y a plus d'une instance de PlayerDeath dans la scène.");
             return;
         }
@@ -16,6 +17,7 @@ public class PlayerDeath : MonoBehaviour
     
     void Update()
     {
+        // Provisoire pour tests de la mort.
         if(Input.GetKeyDown(KeyCode.K))
         {
             KillPlayer();
@@ -32,15 +34,18 @@ public class PlayerDeath : MonoBehaviour
         Debug.Log("Ooops, Player's dead...");
 
         // Bloquer les mouvements du personnage
-        PlayerMovement.instance.enabled=false;
-        PlayerMovement.instance.rb.velocity=Vector3.zero;
+        PlayerMovement.instance.enabled = false;
+        PlayerMovement.instance.rb.velocity = Vector3.zero;
 
         // Bloquer les interactions
         PlayerMovement.instance.rb.bodyType = RigidbodyType2D.Kinematic;
-        PlayerMovement.instance.boxCollider.enabled=false;
+        PlayerMovement.instance.boxCollider.enabled = false;
+
+        // Vider le stack de bones attrapés dans le niveau
+        Inventory.instance.emptyBoneStack();
 
         // PROVISOIRE - Désactivation du sprite renderer
-        PlayerMovement.instance.spriteRenderer.enabled=false;
+        PlayerMovement.instance.spriteRenderer.enabled = false;
 
         // TODO - Jouer l'animation de mort
 
@@ -53,14 +58,14 @@ public class PlayerDeath : MonoBehaviour
         Debug.Log("Player's back baby!");
 
         // Débloquer les mouvements du personnage
-        PlayerMovement.instance.enabled=true;
+        PlayerMovement.instance.enabled = true;
 
         // Débloquer les interactions
         PlayerMovement.instance.rb.bodyType = RigidbodyType2D.Dynamic;
-        PlayerMovement.instance.boxCollider.enabled=true;
+        PlayerMovement.instance.boxCollider.enabled = true;
 
         // PROVISOIRE - Réactivation du sprite renderer
-        PlayerMovement.instance.spriteRenderer.enabled=true;
+        PlayerMovement.instance.spriteRenderer.enabled = true;
 
         // TODO - Animator et respawn ?
 

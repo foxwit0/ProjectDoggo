@@ -14,14 +14,6 @@ public class PlayerDeath : MonoBehaviour
         instance = this;
     }
     
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.K))
@@ -53,7 +45,7 @@ public class PlayerDeath : MonoBehaviour
         // TODO - Jouer l'animation de mort
 
         // TODO - Afficher l'écran de game over
-
+        Time.timeScale = 0;
     }
 
     public void RespawnPlayer()
@@ -72,15 +64,6 @@ public class PlayerDeath : MonoBehaviour
 
         // TODO - Animator et respawn ?
 
-    }
-
-    private void OnCollisionEnter2D(Collision2D coll) 
-    {
-        //Collision avec le plasma
-        if(coll.gameObject.CompareTag("Plasma"))
-        {
-            PlayerDeath.instance.KillPlayer();
-        }
     }
 
 // Améliorations possibles : déplacer le spriteRenderer et le boxCollider ici ? Ou garder la logique de "toute la physique du personnage est à garder au même endroit" ? 

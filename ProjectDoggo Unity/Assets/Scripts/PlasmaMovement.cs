@@ -1,34 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlasmaMovement : MonoBehaviour
 {   
-    public static PlasmaMovement instance;
-
-    public float fallSpeed;
+    private float fallSpeed;
 
     [HideInInspector] public Rigidbody2D rb;
-    [HideInInspector] public SpriteRenderer spriteRenderer;
-    [HideInInspector] public BoxCollider2D boxCollider;
-
-    #region Singleton
-    private void Awake() 
-    {
-        if(instance != null) 
-        {
-            Debug.LogError("Il y a plus d'une instance de PlasmaMovement en jeu") ;
-            return;
-        }
-        instance = this;
-    }
-    #endregion
 
     private void Start() 
     {
         rb = transform.GetComponent<Rigidbody2D>();
-        spriteRenderer = transform.GetComponent<SpriteRenderer>();
-        boxCollider = transform.GetComponent<BoxCollider2D>();
+
+        fallSpeed = PlayerMovement.instance.fallSpeed - 100f;
     }
 
     private void FixedUpdate() 

@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 121892349}
   - component: {fileID: 121892348}
   - component: {fileID: 121892347}
+  - component: {fileID: 121892350}
   m_Layer: 0
   m_Name: Plasma
   m_TagString: Plasma
@@ -217,10 +218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a64c61e25d271734e9e5be30b8e44d85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallSpeed: 250
   rb: {fileID: 0}
-  spriteRenderer: {fileID: 0}
-  boxCollider: {fileID: 0}
 --- !u!61 &121892348
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -264,10 +262,22 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &121892350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121892344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea4f2c242abf6d849be56e43b166cf2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &130283774
 GameObject:
   m_ObjectHideFlags: 0
@@ -1610,7 +1620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b052923addaa4f84985baaddd6b3f680, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallSpeed: 300
+  fallSpeed: 700
   horizontalMoveSpeed: 500
   speedRatio: 0.5
   rb: {fileID: 0}

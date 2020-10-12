@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 
-public class PlayerCollision : MonoBehaviour
+public class PlasmaCollision : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D coll) 
     {
-        //Collision avec une plateforme
-        if(coll.gameObject.CompareTag("Platform"))
+        //Collision avec le joueur
+        if(coll.gameObject.CompareTag("Player"))
         {
             PlayerDeath.instance.KillPlayer();
             return;

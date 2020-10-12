@@ -74,6 +74,15 @@ public class PlayerDeath : MonoBehaviour
 
     }
 
+    private void OnCollisionEnter2D(Collision2D coll) 
+    {
+        //Collision avec le plasma
+        if(coll.gameObject.CompareTag("Plasma"))
+        {
+            PlayerDeath.instance.KillPlayer();
+        }
+    }
+
 // Améliorations possibles : déplacer le spriteRenderer et le boxCollider ici ? Ou garder la logique de "toute la physique du personnage est à garder au même endroit" ? 
 
 }

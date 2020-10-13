@@ -61,11 +61,12 @@ public class PlayerMovement : MonoBehaviour
         verticalMovement = -1f * modifierSpeed * fallSpeed; // Le -1 permet d'avoir un mouvement vers le bas
         #endregion
 
-        //Debug
+        #region Debug
         if(debug)
         {
             verticalMovement = Input.GetAxis("Vertical") * horizontalMoveSpeed;
         }
+        #endregion
     }
 
     private void FixedUpdate() 
@@ -75,7 +76,7 @@ public class PlayerMovement : MonoBehaviour
 
     void MovePlayer(float _horizontalMovement, float _verticalMovement)
     {
-        Vector3 targetVelocity = new Vector2(_horizontalMovement,_verticalMovement);
+        Vector3 targetVelocity = new Vector2(_horizontalMovement, _verticalMovement);
 
         rb.velocity = targetVelocity * Time.fixedDeltaTime;
     }

@@ -16,6 +16,11 @@ public class PlayerMovement : MonoBehaviour
     private float horizontalMovement;
     private Vector3 velocity = Vector3.zero;
 
+
+    //Debug
+    [Tooltip("Can be enabled to allow the player to move freely")]
+    [SerializeField] private bool debug = false;
+
     #region Singleton
     private void Awake() 
     {
@@ -55,6 +60,12 @@ public class PlayerMovement : MonoBehaviour
 
         verticalMovement = -1f * modifierSpeed * fallSpeed; // Le -1 permet d'avoir un mouvement vers le bas
         #endregion
+
+        //Debug
+        if(debug)
+        {
+            verticalMovement = Input.GetAxis("Vertical") * horizontalMoveSpeed;
+        }
     }
 
     private void FixedUpdate() 

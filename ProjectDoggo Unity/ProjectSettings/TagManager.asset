@@ -40,6 +40,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 3060110183
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Platforms
+    uniqueID: 873275239
+    locked: 0
+  - name: Props
+    uniqueID: 1970674575
+    locked: 0
+  - name: Plasma
+    uniqueID: 2501782755
     locked: 0

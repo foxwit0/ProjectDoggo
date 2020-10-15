@@ -3,17 +3,18 @@ using UnityEngine.UI;
 
 public class PlatformAlerts : MonoBehaviour
 {
-
+    //Variables relatives au joueur
     private float playerYPosition;
     private PlayerMovement player;
 
+    //Variables relatives à la détection des plateformes
     [SerializeField] private float startDetectionPosOffset = -18f;
     [SerializeField] private float detectionDistance = 30f;
 
+    //Variables relatives au alertes
     [SerializeField] private GameObject platformAlertsGO = null;
-    public Image[] platformAlerts;
+    private Image[] platformAlerts;
     private int platformLayerMask;
-
     [SerializeField] private Color alertInitialColor = Color.black;
     [SerializeField] private Color alertFinalColor = Color.black;
 
@@ -32,15 +33,14 @@ public class PlatformAlerts : MonoBehaviour
     {
         playerYPosition = player.transform.position.y;        
 
-        for(int i = 0; i < platformAlerts.Length; i++)
+        for(int i = 0; i < platformAlerts.Length; i++) //Boucle entre l'ensemble des alertes plateforme
         {
-            Vector2 raycastStartPos = new Vector2(i - (platformAlerts.Length / 2f) + 0.5f, playerYPosition + startDetectionPosOffset);
-            RaycastHit2D hit = Physics2D.Raycast(raycastStartPos, Vector2.down, detectionDistance, platformLayerMask);
-            Debug.DrawRay(raycastStartPos, Vector2.down * detectionDistance, Color.red);
+            Vector2 raycastStartPos = new Vector2(i - (platformAlerts.Length / 2f) + 0.5f, playerYPosition + startDetectionPosOffset); //Calcul de la position de départ du raycast de détection plateforme
+            RaycastHit2D hit = Physics2D.Raycast(raycastStartPos, Vector2.down, detectionDistance, platformLayerMask); //Raycast de détection plateforme
+            Debug.DrawRay(raycastStartPos, Vector2.down * detectionDistance, Color.red); //Affichage du raycast sur la scène
 
             if(hit)
             {
-                //Debug.Log("Collision position x : " + hit.point.x);
                 ShowAlert(i);
             } 
             else if(platformAlerts[i].enabled)
@@ -48,6 +48,7 @@ public class PlatformAlerts : MonoBehaviour
                 HideAlert(i);
             }
 
+            //Si l'alerte est affichée, ajustement de sa couleur selon l'éloignement de la plateforme
             if(platformAlerts[i].enabled)
             {
                 float distanceFromStartPos = Mathf.Abs(hit.point.y - raycastStartPos.y);
@@ -69,10 +70,8 @@ public class PlatformAlerts : MonoBehaviour
 
     private void UpdatePlatformAlertUI(int alertIndex, float distance, float maxDistance)
     {
-        //Debug.Log("Alert index : " + alertIndex + " ; Distance : " + distance);
         float colorRatio = distance / maxDistance;
-        //Debug.Log(colorRatio);
-        platformAlerts[alertIndex].color = Color.Lerp(alertFinalColor, alertInitialColor, colorRatio);        
+        platformAlerts[alertIndex].color = Color.Lerp(alertFinalColor, alertInitialColor, colorRatio); //Dégradé de couleur     
     }
 
 }

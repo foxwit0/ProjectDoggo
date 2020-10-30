@@ -6,7 +6,7 @@ public class UI : MonoBehaviour
 {
     public GameObject pauseMenu;
 
-    void Update()
+    private void Update()
     {
         //Ouvrir le menu pause avec la touche echap
         if(Input.GetKeyDown(KeyCode.Escape))

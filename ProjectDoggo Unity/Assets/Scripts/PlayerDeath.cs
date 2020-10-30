@@ -4,6 +4,7 @@ public class PlayerDeath : MonoBehaviour
 {
 
     public static PlayerDeath instance;
+    public GameObject DeathMenu;
 
     private void Awake()
     {
@@ -49,7 +50,8 @@ public class PlayerDeath : MonoBehaviour
 
         // TODO - Jouer l'animation de mort
 
-        // TODO - Afficher l'écran de game over
+        //Afficher l'écran de mort
+        DeathMenu.SetActive(true);
         Time.timeScale = 0;
     }
 

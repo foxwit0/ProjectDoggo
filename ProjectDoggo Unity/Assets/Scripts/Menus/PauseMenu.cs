@@ -14,12 +14,14 @@ public class PauseMenu : MonoBehaviour
     public void Restart()
     {
         PlayTime();
+        //Recharger le niveau actuel
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void MainMenu()
     {
         PlayTime();
+        //Charger le menu principal
         SceneManager.LoadScene("MainMenu");
     }
     

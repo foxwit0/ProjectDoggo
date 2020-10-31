@@ -44,7 +44,7 @@ public class CameraFollow : MonoBehaviour
 
     private void Update()
     {
-        //----------Zoom/dezoom----------
+        #region Zoom/Dezoom
         if(zoomActivated)
         {
             //Definition de targetSize, yTargetOff et xTargetPos en fonction des input du joueur
@@ -67,18 +67,20 @@ public class CameraFollow : MonoBehaviour
                 xTargetPos = 0f;
             }
         }
+        #endregion Zoom/Dezoom
 
-        //----------Mouvement de la caméra suivant le personnage----------
+        #region Mouvement camera personnage
         //Création d'un vecteur interpolé sur la position X et l'offset Y depuis la position Y du joueur
         lerpPosition = new Vector3(xLerpPos, player.transform.position.y + yLerpOff, -10);
         //Léger smooth sur le lerpPosition et écriture final de la position de la caméra
         transform.position = Vector3.SmoothDamp(transform.position, lerpPosition, ref velocity, timeOffset);
+        #endregion Mouvement camera personnage
 
     }
 
     private void FixedUpdate()
     {
-        //----------Zoom/dezoom----------
+        #region Zoom/Dezoom
         //Modification progressive de la size  / Indépendant du framerate
         cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, targetSize, zoomSpeed);
 
@@ -87,6 +89,7 @@ public class CameraFollow : MonoBehaviour
 
         //Modification progressive de xLerpPos / Indépendant du framerate
         xLerpPos = Mathf.Lerp(xLerpPos, xTargetPos, xPositionSpeed);
+        #endregion Zoom/Dezoom
 
     }
 

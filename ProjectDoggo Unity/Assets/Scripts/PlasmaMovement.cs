@@ -19,7 +19,7 @@ public class PlasmaMovement : MonoBehaviour
     {
         rb = transform.GetComponent<Rigidbody2D>();
 
-        fallSpeed = PlayerMovement.instance.fallSpeed + fallSpeedOffset;
+        fallSpeed = PlayerMovement.instance.fallSpeedBasic + fallSpeedOffset;
     }
 
     private void FixedUpdate() 

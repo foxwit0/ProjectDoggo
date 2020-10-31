@@ -3,6 +3,7 @@
 public class RespawnSystem : MonoBehaviour
 {
     [SerializeField] private GameObject plasma = null;
+    private PlatformAlerts platformAlerts;
 
     [Tooltip("Minimum distance between Plasma and Player on respawn")]
     [SerializeField] private float minDistanceFromPlasma = 10f;
@@ -33,6 +34,9 @@ public class RespawnSystem : MonoBehaviour
             plasmaRespawnPosition = plasma.transform.position;
         else
             Debug.LogWarning("Missing plasma object in inspector");
+
+        //Récupératin du GO PlatformAlerts
+        platformAlerts = gameObject.GetComponent<PlatformAlerts>();
     }
 
     //Mise à jour de la position de respawn du joueur et du plasma à la prise d'un checkpoint
@@ -55,6 +59,9 @@ public class RespawnSystem : MonoBehaviour
 
         //Respawn du plasma
         plasma.transform.position = plasmaRespawnPosition;
+
+        //Désactivation des alertes plateforme en cours
+        platformAlerts.HideAllAlerts();
 
         //Réactivation du temps
         Time.timeScale = 1;

@@ -4,9 +4,11 @@ public class PlayerMovement : MonoBehaviour
 {
     public static PlayerMovement instance;
 
-    public float fallSpeed;
+    public float fallSpeedBasic;
+    public float fallSpeedHigh;
+    public float fallSpeedLow;
+    private float fallSpeed;
     public float horizontalMoveSpeed;
-    public float speedRatio;
 
     [HideInInspector] public Rigidbody2D rb;
     [HideInInspector] public SpriteRenderer spriteRenderer;
@@ -48,17 +50,18 @@ public class PlayerMovement : MonoBehaviour
         
 
         #region VerticalSpeedCalculation
-        float modifierSpeed = 1f;
         if(Input.GetAxis("Vertical") > 0.1f) // Le joueur ralentit
         {
-            modifierSpeed *= 1f - speedRatio;
+            fallSpeed = fallSpeedLow;
         } 
         else if (Input.GetAxis("Vertical") < -0.1f) //Le joueur accélère
         {
-            modifierSpeed *= 1f + speedRatio;
+            fallSpeed = fallSpeedHigh;
         } 
+        else
+            fallSpeed = fallSpeedBasic;
 
-        verticalMovement = -1f * modifierSpeed * fallSpeed; // Le -1 permet d'avoir un mouvement vers le bas
+        verticalMovement = -1 * fallSpeed; // Le -1 permet d'avoir un mouvement vers le bas
         #endregion
 
         #region Debug

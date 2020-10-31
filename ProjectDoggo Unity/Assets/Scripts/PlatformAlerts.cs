@@ -75,6 +75,14 @@ public class PlatformAlerts : MonoBehaviour
         StartCoroutine((DisableImage(alertIndex)));
     }
 
+    public void HideAllAlerts()
+    {
+        for(int i = 0; i < platformAlerts.Length; i++) //Boucle entre l'ensemble des alertes plateforme
+        {
+            platformAlerts[i].enabled = false;
+        }
+    }
+
     IEnumerator DisableImage(int _alertIndex)
     {
         yield return new WaitForSeconds(0.2f);
@@ -86,8 +94,6 @@ public class PlatformAlerts : MonoBehaviour
     {
         float colorRatio = distance / maxDistance;
         platformAlerts[alertIndex].color = Color.Lerp(alertFinalColor, alertInitialColor, colorRatio); //Dégradé de couleur     
-    }
-
-    
+    }   
 
 }

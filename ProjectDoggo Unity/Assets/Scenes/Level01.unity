@@ -55946,6 +55946,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8711799242864571883, guid: 24065733349ed4041a3160846c2b495e,
+        type: 3}
+      propertyPath: fallSpeedBasic
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8711799242864571883, guid: 24065733349ed4041a3160846c2b495e,
+        type: 3}
+      propertyPath: fallSpeedHigh
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8711799242864571883, guid: 24065733349ed4041a3160846c2b495e,
+        type: 3}
+      propertyPath: fallSpeedLow
+      value: 700
+      objectReference: {fileID: 0}
     - target: {fileID: 8711799242864571884, guid: 24065733349ed4041a3160846c2b495e,
         type: 3}
       propertyPath: DeathMenu

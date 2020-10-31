@@ -1,13 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class DeathMenu : MonoBehaviour
 {
+
     private void Update()
     {
-        //Continuer avec la touche entrer
+        //Continuer avec la touche 'Entrer' ou 'Espace'
         if(Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
         {
             Continue();
@@ -16,9 +15,16 @@ public class DeathMenu : MonoBehaviour
 
     public void Continue()
     {
-        //Jouer le temps
+        gameObject.SetActive(false);
+        RespawnSystem.instance.Respawn();
+    }
+
+    public void RestartFromZero()
+    {
+        //Réactivation du temps
         Time.timeScale = 1;
-        //Recharger le niveau actuel
+
+        //Rechargement du niveau actuel
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

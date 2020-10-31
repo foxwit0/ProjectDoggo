@@ -32,8 +32,6 @@ public class PlayerDeath : MonoBehaviour
 
     public void KillPlayer()
     {
-        Debug.Log("Ooops, Player's dead...");
-
         // Bloquer les mouvements du personnage
         PlayerMovement.instance.enabled = false;
         PlayerMovement.instance.rb.velocity = Vector3.zero;
@@ -57,8 +55,6 @@ public class PlayerDeath : MonoBehaviour
 
     public void RespawnPlayer()
     {
-        Debug.Log("Player's back baby!");
-
         // Débloquer les mouvements du personnage
         PlayerMovement.instance.enabled = true;
 

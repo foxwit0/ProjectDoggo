@@ -2,118 +2,77 @@
 
 public class CameraFollow : MonoBehaviour
 {
+    [Header("Camera Follow")]
     [SerializeField] private GameObject player = null;
     [SerializeField] private float timeOffset = 0f;
-    [Header("Offset Y")]
-    [SerializeField] private float yOffset = -7;
-    [SerializeField] private float minYOffset = -6;
-    [SerializeField] private float maxYOffset = -9;
     [Space]
-    [SerializeField] private float yOffsetSpeed = 0.1f;
-    [Header("Position X")]
-    [SerializeField] private float posXSpeed = 0.1f;
+    [Header("Zoom Feature")]
+    [SerializeField] private bool zoomActivated = true;
     [Header("Size")]
     [SerializeField] private float size = 10f;
     [SerializeField] private float minSize = 9f;
     [SerializeField] private float maxSize = 12f;
-    [Space]
     [SerializeField] private float zoomSpeed = 0.1f;
-    [SerializeField] private float dezoomSpeed = 0.1f;
+    [Header("Offset Y")]
+    [SerializeField] private float yOffset = -7;
+    [SerializeField] private float minYOffset = -6;
+    [SerializeField] private float maxYOffset = -9;
+    [SerializeField] private float yOffsetSpeed = 0.1f;
+    [Header("Position X")]
+    [SerializeField] private float xPositionSpeed = 0.1f;
 
     private Vector3 velocity;
 
     private Camera cam;
-    private Vector3 targetPosition;
-    private float targetPosX;
-    private float targetPosXSpeed;
-    private Vector3 posOffset;
-    private float targetYOffset;
-    private float targetYOffsetSpeed;
     private float targetSize;
-    private float targetZoomSpeed;
+    private float yTargetOff;
+    private Vector3 lerpPosition;
+    private float xLerpPos;
+    private float xTargetPos;
+    private float yLerpOff;
     
     private void Start()
     {
         cam = transform.GetComponent<Camera>();
-        targetPosition = Vector3.zero;
-        targetPosX = 0f;
-        targetPosXSpeed = 0f;
-        posOffset = new Vector3(0,yOffset,-10);
-        targetYOffset = yOffset;
-        targetYOffsetSpeed = 0f;
         targetSize = size;
-        targetZoomSpeed = 0f;
+        yTargetOff = yOffset;
+        yLerpOff = yOffset;
+        xTargetPos = 0f;
+        xLerpPos = 0f;
+        lerpPosition = new Vector3(xLerpPos, player.transform.position.y + yLerpOff, -10);
     }
 
     private void Update()
     {
         //----------Zoom/dezoom----------
-        //Definition de targetPosOffset en fonction des input du joueur
-        //Definition de targetSize en fonction des input du joueur
-        if(Input.GetAxis("Vertical") > 0.1f) // Le joueur ralentit
+        if(zoomActivated)
         {
-            targetYOffset = minYOffset;
-            targetSize = minSize;
-            targetPosX = player.transform.position.x / 2; //Permet du suivre le joueur sur l'axe X quand il ralentit et que la caméra zoom
-        } 
-        else if (Input.GetAxis("Vertical") < -0.1f) //Le joueur accélère
-        {
-            targetYOffset = maxYOffset;
-            targetSize = maxSize;
-            targetPosX = 0f;
-        }
-        else
-        {
-            targetYOffset = yOffset;
-            targetSize = size;
-            targetPosX = 0f;
-        }
-
-        //----------Les Rampes !----------
-        //Définition de targetZoomSpeed en fonction du delta entre la size actuel et targetSize
-        if(targetSize > cam.orthographicSize + dezoomSpeed) //Ici sur la comparasion entre le target et le réel on intègre dans la comparaison la speed qui devrait être appliqué
-        {                                                   //pour éviter un effet de bagottement
-            targetZoomSpeed = dezoomSpeed;
-        }
-        else if(targetSize < cam.orthographicSize - zoomSpeed)  //Même chose ici
-        {
-            targetZoomSpeed = -zoomSpeed;       //ici pour le zoom on met une valeur négative pour diminuer la valeur de size (et ainsi zoomer)
-        }
-        else
-        {
-            targetZoomSpeed = 0f;   //ici le zoom de bouge plus (il a atteint sa cible)
-        }
-        //Définition de targetYOffsetSpeed en fonction du delta entre le posOffset actuel et targetYOffset
-        if(targetYOffset > posOffset.y + yOffsetSpeed)
-        {
-            targetYOffsetSpeed = yOffsetSpeed;
-        }
-        else if(targetYOffset < posOffset.y - yOffsetSpeed)
-        {
-            targetYOffsetSpeed = -yOffsetSpeed;
-        }
-        else
-        {
-            targetYOffsetSpeed = 0f;
-        }
-        //Définition de targetPosXSpeed en fonction du delta entre la posX réel actuel et targetPosX
-        if(targetPosX > targetPosition.x + posXSpeed)
-        {
-            targetPosXSpeed = posXSpeed;
-        }
-        else if(targetPosX < targetPosition.x - posXSpeed)
-        {
-            targetPosXSpeed = -posXSpeed;
-        }
-        else
-        {
-            targetPosXSpeed = 0f;
-            targetPosition = new Vector3(targetPosX, player.transform.position.y, 0);  // ça c'est pas très bien - a revoir !
+            //Definition de targetSize, yTargetOff et xTargetPos en fonction des input du joueur
+            if(Input.GetAxis("Vertical") > 0.1f) // Le joueur ralentit
+            {
+                targetSize = minSize;
+                yTargetOff = minYOffset;
+                xTargetPos = player.transform.position.x / 2; //Permet du suivre le joueur sur l'axe X quand il ralentit et que la caméra zoom
+            } 
+            else if (Input.GetAxis("Vertical") < -0.1f) //Le joueur accélère
+            {
+                targetSize = maxSize;
+                yTargetOff = maxYOffset;
+                xTargetPos = 0f;
+            }
+            else
+            {
+                targetSize = size;
+                yTargetOff = yOffset;
+                xTargetPos = 0f;
+            }
         }
 
         //----------Mouvement de la caméra suivant le personnage----------
-        //targetPosition = new Vector3(targetPosX, player.transform.position.y, 0); //Calcul de la position pour ne bouger que sur l'axe y du joueur, et pas l'axe x (sauf exeption)
-        transform.position = Vector3.SmoothDamp(transform.position, targetPosition + posOffset, ref velocity, timeOffset);
+        //Création d'un vecteur interpolé sur la position X et l'offset Y depuis la position Y du joueur
+        lerpPosition = new Vector3(xLerpPos, player.transform.position.y + yLerpOff, -10);
+        //Léger smooth sur le lerpPosition et écriture final de la position de la caméra
+        transform.position = Vector3.SmoothDamp(transform.position, lerpPosition, ref velocity, timeOffset);
 
     }
 
@@ -121,14 +80,14 @@ public class CameraFollow : MonoBehaviour
     {
         //----------Zoom/dezoom----------
         //Modification progressive de la size  / Indépendant du framerate
-        cam.orthographicSize = cam.orthographicSize + targetZoomSpeed;
+        cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, targetSize, zoomSpeed);
 
-        //Modification progressive du posOffset / Indépendant du framerate
-        posOffset = new Vector3(0,posOffset.y + targetYOffsetSpeed,-10);
-        
-        //Modification progressive de targetPosition / Indépendant du framerate
-        targetPosition = new Vector3(targetPosition.x + targetPosXSpeed, player.transform.position.y, 0);
+        //Modification progressive du yLerpOff / Indépendant du framerate
+        yLerpOff = Mathf.Lerp(yLerpOff, yTargetOff, yOffsetSpeed);
+
+        //Modification progressive de xLerpPos / Indépendant du framerate
+        xLerpPos = Mathf.Lerp(xLerpPos, xTargetPos, xPositionSpeed);
+
     }
-
 
 }

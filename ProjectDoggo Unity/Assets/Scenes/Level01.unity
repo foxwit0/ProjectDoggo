@@ -1446,16 +1446,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1315128414}
   timeOffset: 0.05
+  zoomActivated: 1
+  size: 10
+  minSize: 8
+  maxSize: 12
+  zoomSpeed: 0.1
   yOffset: -7.5
   minYOffset: -6
   maxYOffset: -9
   yOffsetSpeed: 0.1
   posXSpeed: 0.1
-  size: 10
-  minSize: 8
-  maxSize: 12
-  zoomSpeed: 0.1
-  dezoomSpeed: 0.1
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0

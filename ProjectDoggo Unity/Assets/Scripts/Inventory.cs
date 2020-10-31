@@ -32,23 +32,10 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public void RestoreBonesOnRespawn(List<Bone> _bones)
+    public Stack<int> GetBoneStackBetweenCPs()
     {
-        //Regarde tous les ID des os récupérés depuis le dernier CP
-        while(boneStackBetweenCPs.Count > 0)
-        {
-            //Recherche du GO Bone avec l'ID en cours
-            foreach(Bone bone in _bones)
-            {
-                if(bone.boneID == boneStackBetweenCPs.Peek()) //Une fois le bon GO trouvé, on remet l'os en jeu et on le retire de la pile
-                {
-                    bone.Enable();
-                    boneStackBetweenCPs.Pop();
-                    break;
-                }
-            }            
-        }
-    }
+        return boneStackBetweenCPs;
+    } 
 
     public void registerBonesWhenLevelEnds()
     {

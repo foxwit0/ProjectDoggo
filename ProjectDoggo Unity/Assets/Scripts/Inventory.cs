@@ -1,12 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
 
     public static Inventory instance ;
-    private Stack<int> boneStackProvisoire = new Stack<int>() ; // Pile pour le stockage des ID des os du niveau ==> à modifier éventuellement en fonction de la gestion finale.
+    private Stack<int> boneStackLevel = new Stack<int>() ; // Pile pour le stockage des ID des os du niveau
+    private Stack<int> boneStackBetweenCPs = new Stack<int>() ; // Pile pour le stockage des ID des os entre les checkpoints
     
 
     void Awake()
@@ -21,14 +21,32 @@ public class Inventory : MonoBehaviour
 
     public void pushBoneInStack(int _boneID)
     {
-        boneStackProvisoire.Push(_boneID) ;
+        boneStackBetweenCPs.Push(_boneID) ;
     }
 
-    public void emptyBoneStack() // Requis à la mort du joueur.
+    public void RegisterBonesAtCheckpoint()
     {
-        while(boneStackProvisoire.Count>0)
+        while(boneStackBetweenCPs.Count > 0)
         {
-            boneStackProvisoire.Pop();
+            boneStackLevel.Push(boneStackBetweenCPs.Pop());
+        }
+    }
+
+    public void RestoreBonesOnRespawn(List<Bone> _bones)
+    {
+        //Regarde tous les ID des os récupérés depuis le dernier CP
+        while(boneStackBetweenCPs.Count > 0)
+        {
+            //Recherche du GO Bone avec l'ID en cours
+            foreach(Bone bone in _bones)
+            {
+                if(bone.boneID == boneStackBetweenCPs.Peek()) //Une fois le bon GO trouvé, on remet l'os en jeu et on le retire de la pile
+                {
+                    bone.Enable();
+                    boneStackBetweenCPs.Pop();
+                    break;
+                }
+            }            
         }
     }
 

@@ -1,9 +1,12 @@
 ﻿using UnityEngine;
+using System.Collections.Generic;
 
 public class RespawnSystem : MonoBehaviour
 {
     [SerializeField] private GameObject plasma = null;
     private PlatformAlerts platformAlerts;
+    [SerializeField] private GameObject bonesGO = null;
+    private List<Bone> bones = new List<Bone>();
 
     [Tooltip("Minimum distance between Plasma and Player on respawn")]
     [SerializeField] private float minDistanceFromPlasma = 10f;
@@ -37,6 +40,12 @@ public class RespawnSystem : MonoBehaviour
 
         //Récupératin du GO PlatformAlerts
         platformAlerts = gameObject.GetComponent<PlatformAlerts>();
+
+        //Récupération des GO Bone
+        foreach(Bone bone in bonesGO.GetComponentsInChildren<Bone>())
+        {
+            bones.Add(bone);
+        }
     }
 
     //Mise à jour de la position de respawn du joueur et du plasma à la prise d'un checkpoint
@@ -62,6 +71,9 @@ public class RespawnSystem : MonoBehaviour
 
         //Désactivation des alertes plateforme en cours
         platformAlerts.HideAllAlerts();
+
+        //Réactivation des os récupérés depuis le dernier checkpoint
+        Inventory.instance.RestoreBonesOnRespawn(bones);
 
         //Réactivation du temps
         Time.timeScale = 1;

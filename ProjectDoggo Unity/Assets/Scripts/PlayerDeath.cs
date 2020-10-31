@@ -40,9 +40,6 @@ public class PlayerDeath : MonoBehaviour
         PlayerMovement.instance.rb.bodyType = RigidbodyType2D.Kinematic;
         PlayerMovement.instance.boxCollider.enabled = false;
 
-        // Vider le stack de bones attrapés dans le niveau
-        Inventory.instance.emptyBoneStack();
-
         // PROVISOIRE - Désactivation du sprite renderer
         PlayerMovement.instance.spriteRenderer.enabled = false;
 

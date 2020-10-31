@@ -20,8 +20,8 @@ public class Checkpoint : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             respawnSystem.UpdateRespawnData(PlayerMovement.instance.transform.position, plasma.transform.position);
+            Inventory.instance.RegisterBonesAtCheckpoint();
             Destroy(gameObject);
         }
     }
-
 }

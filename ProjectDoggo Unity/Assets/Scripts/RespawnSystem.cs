@@ -73,27 +73,9 @@ public class RespawnSystem : MonoBehaviour
         platformAlerts.HideAllAlerts();
 
         //Réactivation des os récupérés depuis le dernier checkpoint
-        RestoreBonesOnRespawn(Inventory.instance.GetBoneStackBetweenCPs());
+        Inventory.instance.RestoreBonesOnRespawn(bones);
 
         //Réactivation du temps
         Time.timeScale = 1;
-    }
-
-    private void RestoreBonesOnRespawn(Stack<int> _boneStackBetweenCPs)
-    {
-        //Regarde tous les ID des os récupérés depuis le dernier CP
-        while(_boneStackBetweenCPs.Count > 0)
-        {
-            //Recherche du GO Bone avec l'ID en cours
-            foreach(Bone bone in bones)
-            {
-                if(bone.boneID == _boneStackBetweenCPs.Peek()) //Une fois le bon GO trouvé, on remet l'os en jeu et on le retire de la pile
-                {
-                    bone.Enable();
-                    _boneStackBetweenCPs.Pop();
-                    break;
-                }
-            }            
-        }
     }
 }

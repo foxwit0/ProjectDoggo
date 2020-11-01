@@ -7,7 +7,6 @@ public class LevelProgressBarUI : MonoBehaviour
     [SerializeField] private RectTransform playerUI = null;
     [SerializeField] private Slider plasmaUI = null;
 
-    // Start is called before the first frame update
     void Start()
     {
         #region Warnings

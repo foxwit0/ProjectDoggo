@@ -43,11 +43,18 @@ public class PlatformAlerts : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(raycastStartPos, Vector2.down, detectionDistance, platformLayerMask); //Raycast de détection plateforme
             Debug.DrawRay(raycastStartPos, Vector2.down * detectionDistance, Color.red); //Affichage du raycast sur la scène
 
-            if(hit && !platformAlerts[i].enabled)
-            {
-                ShowAlert(i);
-            } 
-            else if(!hit && platformAlerts[i].enabled)
+            Vector2 raycastStartPos2 = new Vector2(raycastStartPos.x, raycastStartPos.y + 1);
+            RaycastHit2D hitAbove = Physics2D.Raycast(raycastStartPos2, Vector2.up, 1, platformLayerMask); //Raycast de détection plateforme vers le haut
+
+            if(hit)
+            {                
+                Debug.DrawRay(raycastStartPos2, Vector2.up * 1, Color.yellow); //Affichage du raycast vers le haut sur la scène
+                if(!hitAbove && !platformAlerts[i].enabled)
+                {
+                    ShowAlert(i);
+                }
+            }
+            if(platformAlerts[i].enabled && (!hit || hitAbove))
             {                
                 HideAlert(i);
             }

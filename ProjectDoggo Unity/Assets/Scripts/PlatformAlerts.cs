@@ -22,8 +22,6 @@ public class PlatformAlerts : MonoBehaviour
     [SerializeField] private Color alertFinalColor = Color.black;
     private bool[] isDisabling = new bool[NUMBER_OF_ALERTS];
 
-    Coroutine[] myCoroutines = new Coroutine[NUMBER_OF_ALERTS];
-
     void Start()
     {
         player = PlayerMovement.instance;
@@ -38,53 +36,41 @@ public class PlatformAlerts : MonoBehaviour
     void Update()
     {
         playerYPosition = player.transform.position.y;        
-        
 
         for(int i = 0; i < platformAlerts.Length; i++) //Boucle entre l'ensemble des alertes plateforme
         {
             Vector2 raycastStartPos = new Vector2(i - (platformAlerts.Length / 2f) + 0.5f, playerYPosition + startDetectionPosOffset); //Calcul de la position de départ du raycast de détection plateforme
+            RaycastHit2D hit = Physics2D.Raycast(raycastStartPos, Vector2.down, detectionDistance, platformLayerMask); //Raycast de détection plateforme
             Debug.DrawRay(raycastStartPos, Vector2.down * detectionDistance, Color.red); //Affichage du raycast sur la scène
-            RaycastHit2D hit = new RaycastHit2D();
 
-            //Recherche d'une plateforme au-delà de la plateforme actuelle (s'il y en a une au point d'origine du raycast)
-            for(int j = 0; j < detectionDistance; j++)
-            {
-                hit = Physics2D.Raycast(new Vector2(raycastStartPos.x, raycastStartPos.y - j), Vector2.down, detectionDistance - j, platformLayerMask);
-                if(!hit)
+            Vector2 raycastStartPos2 = new Vector2(raycastStartPos.x, raycastStartPos.y + 1);
+            RaycastHit2D hitAbove = Physics2D.Raycast(raycastStartPos2, Vector2.up, 1, platformLayerMask); //Raycast de détection plateforme vers le haut
+
+            if(hit)
+            {                
+                Debug.DrawRay(raycastStartPos2, Vector2.up * 1, Color.yellow); //Affichage du raycast vers le haut sur la scène
+                if(!hitAbove && !platformAlerts[i].enabled)
                 {
-                    if(platformAlerts[i].enabled && !isDisabling[i])
-                    {
-                        HideAlert(i);
-                    }
-                    break;
-                }
-                
-                if(hit.distance > 0)
-                {
-                    if(!platformAlerts[i].enabled || isDisabling[i])
-                    {
-                        ShowAlert(i);
-                    }
-                    break;
+                    ShowAlert(i);
                 }
             }
-            
+            if(platformAlerts[i].enabled && (!hit || hitAbove))
+            {                
+                HideAlert(i);
+            }
+
             //Si l'alerte est affichée, ajustement de sa couleur selon l'éloignement de la plateforme
             if(platformAlerts[i].enabled && !isDisabling[i])
             {
                 float distanceFromStartPos = Mathf.Abs(hit.point.y - raycastStartPos.y);
                 UpdatePlatformAlertUI(i, distanceFromStartPos, detectionDistance);
-            }          
+            }
+            
         }
     }
 
     private void ShowAlert(int alertIndex)
     {
-        if(myCoroutines[alertIndex] != null)
-        {
-            StopCoroutine(myCoroutines[alertIndex]);
-            isDisabling[alertIndex] = false;
-        }
         platformAlerts[alertIndex].enabled = true;
         platformAlerts[alertIndex].GetComponent<Animator>().SetTrigger("Enable");
     }
@@ -93,7 +79,7 @@ public class PlatformAlerts : MonoBehaviour
     {   
         isDisabling[alertIndex] = true;
         platformAlerts[alertIndex].GetComponent<Animator>().SetTrigger("Disable");
-        myCoroutines[alertIndex] = StartCoroutine((DisableImage(alertIndex)));
+        StartCoroutine((DisableImage(alertIndex)));
     }
 
     public void HideAllAlerts()

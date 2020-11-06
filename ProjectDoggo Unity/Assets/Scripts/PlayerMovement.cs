@@ -22,7 +22,6 @@ public class PlayerMovement : MonoBehaviour
     //Debug
     [Tooltip("Can be enabled to allow the player to move freely")]
     [SerializeField] private bool debug = false;
-    [SerializeField] private float debugMoveSpeed = 700f;
 
     #region Singleton
     private void Awake() 
@@ -68,7 +67,7 @@ public class PlayerMovement : MonoBehaviour
         #region Debug
         if(debug)
         {
-            verticalMovement = Input.GetAxis("Vertical") * debugMoveSpeed;
+            verticalMovement = Input.GetAxis("Vertical") * horizontalMoveSpeed;
         }
         #endregion
     }

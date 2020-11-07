@@ -56,6 +56,9 @@ TagManager:
   - name: Plasma
     uniqueID: 2501782755
     locked: 0
+  - name: Border
+    uniqueID: 3019912227
+    locked: 0
   - name: HUD
     uniqueID: 4227632001
     locked: 0

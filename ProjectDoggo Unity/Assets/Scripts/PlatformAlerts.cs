@@ -47,7 +47,7 @@ public class PlatformAlerts : MonoBehaviour
             RaycastHit2D hit = new RaycastHit2D();
 
             //Recherche d'une plateforme au-delà de la plateforme actuelle (s'il y en a une au point d'origine du raycast)
-            for(int j = 0; j < detectionDistance; j++)
+            for(int j = 0; j <= detectionDistance; j++)
             {
                 hit = Physics2D.Raycast(new Vector2(raycastStartPos.x, raycastStartPos.y - j), Vector2.down, detectionDistance - j, platformLayerMask);
                 if(!hit)
@@ -66,6 +66,14 @@ public class PlatformAlerts : MonoBehaviour
                         ShowAlert(i);
                     }
                     break;
+                }
+
+                if(j == detectionDistance)
+                {
+                    if(platformAlerts[i].enabled && !isDisabling[i])
+                    {
+                        HideAlert(i);
+                    }
                 }
             }
             

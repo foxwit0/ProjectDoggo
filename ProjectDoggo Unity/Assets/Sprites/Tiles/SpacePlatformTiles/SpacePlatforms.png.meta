@@ -1,0 +1,1523 @@
+fileFormatVersion: 2
+guid: 8dd7c5b90e81e4840b7615c99bfb5844
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5493519483503574428
+    second: SpacePlatforms_0
+  - first:
+      213: -2339392610825907151
+    second: SpacePlatforms_1
+  - first:
+      213: -3329640460665343757
+    second: SpacePlatforms_2
+  - first:
+      213: -4864241865519246355
+    second: SpacePlatforms_3
+  - first:
+      213: -1000142606514620765
+    second: SpacePlatforms_4
+  - first:
+      213: 6724400703356894489
+    second: SpacePlatforms_5
+  - first:
+      213: -3622494904020529171
+    second: SpacePlatforms_6
+  - first:
+      213: -9122850486503758653
+    second: SpacePlatforms_7
+  - first:
+      213: -8361148021687616036
+    second: SpacePlatforms_8
+  - first:
+      213: 4885298905624809096
+    second: SpacePlatforms_9
+  - first:
+      213: 8990313398504918038
+    second: SpacePlatforms_10
+  - first:
+      213: -3943492333540611579
+    second: SpacePlatforms_11
+  - first:
+      213: -4440864784471375779
+    second: SpacePlatforms_12
+  - first:
+      213: 1160117516785895299
+    second: SpacePlatforms_13
+  - first:
+      213: 7104919746776401551
+    second: SpacePlatforms_14
+  - first:
+      213: -2326901016612628218
+    second: SpacePlatforms_15
+  - first:
+      213: -5847461623795680075
+    second: SpacePlatforms_16
+  - first:
+      213: -5993572027542917287
+    second: SpacePlatforms_17
+  - first:
+      213: -939272582402041896
+    second: SpacePlatforms_18
+  - first:
+      213: -7563926642701307490
+    second: SpacePlatforms_19
+  - first:
+      213: -8771039303341362667
+    second: SpacePlatforms_20
+  - first:
+      213: -5681367879223146218
+    second: SpacePlatforms_21
+  - first:
+      213: 8788124257683995333
+    second: SpacePlatforms_22
+  - first:
+      213: 109320905250644232
+    second: SpacePlatforms_23
+  - first:
+      213: -9158896765532194257
+    second: SpacePlatforms_24
+  - first:
+      213: 1333237626666156336
+    second: SpacePlatforms_25
+  - first:
+      213: 7759068491031486410
+    second: SpacePlatforms_26
+  - first:
+      213: 1948304503026656302
+    second: SpacePlatforms_27
+  - first:
+      213: -7285052751294505261
+    second: SpacePlatforms_28
+  - first:
+      213: 4780158741098968393
+    second: SpacePlatforms_29
+  - first:
+      213: 6472734466799255803
+    second: SpacePlatforms_30
+  - first:
+      213: 6487947399237712527
+    second: SpacePlatforms_31
+  - first:
+      213: 1340404010102776207
+    second: SpacePlatforms_32
+  - first:
+      213: 7104786832912845948
+    second: SpacePlatforms_33
+  - first:
+      213: 8161098883392786166
+    second: SpacePlatforms_34
+  - first:
+      213: 4188541066543617986
+    second: SpacePlatforms_35
+  - first:
+      213: -7319830896417131833
+    second: SpacePlatforms_36
+  - first:
+      213: 2550649764173880994
+    second: SpacePlatforms_37
+  - first:
+      213: 2017759164651442764
+    second: SpacePlatforms_38
+  - first:
+      213: -1806039634514364983
+    second: SpacePlatforms_39
+  - first:
+      213: -340396899469493664
+    second: SpacePlatforms_40
+  - first:
+      213: -3588146301916647515
+    second: SpacePlatforms_41
+  - first:
+      213: -6147261261346564812
+    second: SpacePlatforms_42
+  - first:
+      213: -1238935063894175770
+    second: SpacePlatforms_43
+  - first:
+      213: 3702217976989674246
+    second: SpacePlatforms_44
+  - first:
+      213: -1357697570066818942
+    second: SpacePlatforms_45
+  - first:
+      213: 9153555808436926235
+    second: SpacePlatforms_46
+  - first:
+      213: 6648656753760586885
+    second: SpacePlatforms_47
+  - first:
+      213: 7071104777923361318
+    second: SpacePlatforms_48
+  - first:
+      213: -517454153887081798
+    second: SpacePlatforms_0
+  - first:
+      213: 4322636115579739633
+    second: SpacePlatforms_1
+  - first:
+      213: 680452365176674667
+    second: SpacePlatforms_2
+  - first:
+      213: 7811542012071975805
+    second: SpacePlatforms_3
+  - first:
+      213: 6311300598184500282
+    second: SpacePlatforms_4
+  - first:
+      213: 4268717924389001370
+    second: SpacePlatforms_5
+  - first:
+      213: -3328379265176776414
+    second: SpacePlatforms_6
+  - first:
+      213: 8762539321253003090
+    second: SpacePlatforms_7
+  - first:
+      213: 4716250891709340162
+    second: SpacePlatforms_8
+  - first:
+      213: -985111675904395452
+    second: SpacePlatforms_9
+  - first:
+      213: -797790114675638321
+    second: SpacePlatforms_10
+  - first:
+      213: 4266954149535335916
+    second: SpacePlatforms_11
+  - first:
+      213: 811523500667229224
+    second: SpacePlatforms_12
+  - first:
+      213: 6160671019706452212
+    second: SpacePlatforms_13
+  - first:
+      213: 5300137155841869944
+    second: SpacePlatforms_14
+  - first:
+      213: 4413447651218256054
+    second: SpacePlatforms_15
+  - first:
+      213: -6494244787528145829
+    second: SpacePlatforms_16
+  - first:
+      213: 2853945332944670530
+    second: SpacePlatforms_17
+  - first:
+      213: -317611944523311774
+    second: SpacePlatforms_18
+  - first:
+      213: 4643452664651224513
+    second: SpacePlatforms_19
+  - first:
+      213: -8353996376098691797
+    second: SpacePlatforms_20
+  - first:
+      213: -6154606906048127077
+    second: SpacePlatforms_21
+  - first:
+      213: 8237923764730112717
+    second: SpacePlatforms_22
+  - first:
+      213: -201837781786805900
+    second: SpacePlatforms_23
+  - first:
+      213: 2673131959382653527
+    second: SpacePlatforms_24
+  - first:
+      213: -3049509972310955030
+    second: SpacePlatforms_25
+  - first:
+      213: -3338427078823360017
+    second: SpacePlatforms_26
+  - first:
+      213: -8649010946346572240
+    second: SpacePlatforms_27
+  - first:
+      213: -3256563259236990521
+    second: SpacePlatforms_28
+  - first:
+      213: -8947355615244541008
+    second: SpacePlatforms_29
+  - first:
+      213: -1419244986887445247
+    second: SpacePlatforms_30
+  - first:
+      213: 4387813857524650380
+    second: SpacePlatforms_31
+  - first:
+      213: -2187165901979607740
+    second: SpacePlatforms_32
+  - first:
+      213: 1339795938203406444
+    second: SpacePlatforms_33
+  - first:
+      213: 2866237852033233408
+    second: SpacePlatforms_34
+  - first:
+      213: -5089886976604179362
+    second: SpacePlatforms_35
+  - first:
+      213: -2546344959770794928
+    second: SpacePlatforms_36
+  - first:
+      213: 6856419864887366497
+    second: SpacePlatforms_37
+  - first:
+      213: -6837758461756732703
+    second: SpacePlatforms_38
+  - first:
+      213: 5923050687846289318
+    second: SpacePlatforms_39
+  - first:
+      213: 7645937715611007066
+    second: SpacePlatforms_40
+  - first:
+      213: 26626034105326685
+    second: SpacePlatforms_41
+  - first:
+      213: 3962187086319246735
+    second: SpacePlatforms_42
+  - first:
+      213: -754803000648459041
+    second: SpacePlatforms_43
+  - first:
+      213: 4256775557531195300
+    second: SpacePlatforms_44
+  - first:
+      213: 7011837551726479564
+    second: SpacePlatforms_45
+  - first:
+      213: 7252915209129719928
+    second: SpacePlatforms_46
+  - first:
+      213: 3546569231385099957
+    second: SpacePlatforms_47
+  - first:
+      213: 5500664068477303037
+    second: SpacePlatforms_48
+  - first:
+      213: 4630425961173035989
+    second: SpacePlatforms_49
+  - first:
+      213: 24178518330329873
+    second: SpacePlatforms_50
+  - first:
+      213: -7685704584413437751
+    second: SpacePlatforms_51
+  - first:
+      213: -3388875522534208724
+    second: SpacePlatforms_52
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpacePlatforms_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aba920a4032a1d8f0800000000000000
+      internalID: -517454153887081798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fd976215a61dfb30800000000000000
+      internalID: 4322636115579739633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b691ee822d3717900800000000000000
+      internalID: 680452365176674667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7b1799921c286c60800000000000000
+      internalID: 7811542012071975805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3c5f71947e369750800000000000000
+      internalID: 6311300598184500282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a989c89e5588d3b30800000000000000
+      internalID: 4268717924389001370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 221dc5d51b83fc1d0800000000000000
+      internalID: -3328379265176776414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f7da5361bca9970800000000000000
+      internalID: 8762539321253003090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_8
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20a54ffb23d737140800000000000000
+      internalID: 4716250891709340162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 447f0ad662e2452f0800000000000000
+      internalID: -985111675904395452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_10
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcfb0791e1eade4f0800000000000000
+      internalID: -797790114675638321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_11
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce5cee31134473b30800000000000000
+      internalID: 4266954149535335916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_12
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 824d620035c134b00800000000000000
+      internalID: 811523500667229224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_13
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f885abd6a91f7550800000000000000
+      internalID: 6160671019706452212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 878cdc279aedd8940800000000000000
+      internalID: 5300137155841869944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_15
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b075ad5147bf3d30800000000000000
+      internalID: 4413447651218256054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b54e3f216cecfd5a0800000000000000
+      internalID: -6494244787528145829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_17
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24f0d82d8204b9720800000000000000
+      internalID: 2853945332944670530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_18
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26554468e9d979bf0800000000000000
+      internalID: -317611944523311774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_19
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c590efa89bd07040800000000000000
+      internalID: 4643452664651224513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_20
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b25acbbae84a01c80800000000000000
+      internalID: -8353996376098691797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9fd5d0a0a1769aa0800000000000000
+      internalID: -6154606906048127077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_22
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcaac73840cf25270800000000000000
+      internalID: 8237923764730112717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_23
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 479385a5b9de23df0800000000000000
+      internalID: -201837781786805900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_24
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75a3fbcaa5fd81520800000000000000
+      internalID: 2673131959382653527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_25
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aebe46156d6fda5d0800000000000000
+      internalID: -3049509972310955030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_26
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe9403272468ba1d0800000000000000
+      internalID: -3338427078823360017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_27
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0362c846e5a88f780800000000000000
+      internalID: -8649010946346572240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c1479048fc5ec2d0800000000000000
+      internalID: -3256563259236990521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_29
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b3a04a197b94d380800000000000000
+      internalID: -8947355615244541008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_30
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 105e1533434dd4ce0800000000000000
+      internalID: -1419244986887445247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_31
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c811b4ea475a4ec30800000000000000
+      internalID: 4387813857524650380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_32
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44d98a34330a5a1e0800000000000000
+      internalID: -2187165901979607740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_33
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c601028ae49e79210800000000000000
+      internalID: 1339795938203406444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_34
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0023834f32ce6c720800000000000000
+      internalID: 2866237852033233408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e54fe9c13c61d59b0800000000000000
+      internalID: -5089886976604179362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_36
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 054614d00c099acd0800000000000000
+      internalID: -2546344959770794928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_37
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1631b8d4a85e62f50800000000000000
+      internalID: 6856419864887366497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_38
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ea811338e66b11a0800000000000000
+      internalID: -6837758461756732703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_39
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af06bb0837e23250800000000000000
+      internalID: 5923050687846289318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_40
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5871c9a7d3db1a60800000000000000
+      internalID: 7645937715611007066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_41
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5c10a8ac389e5000800000000000000
+      internalID: 26626034105326685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8dd2b599248cf630800000000000000
+      internalID: 3962187086319246735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_43
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdc13f68ba66685f0800000000000000
+      internalID: -754803000648459041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_44
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a75633f0da131b30800000000000000
+      internalID: 4256775557531195300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_45
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc8c66d5a1d0f4160800000000000000
+      internalID: 7011837551726479564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_46
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 878743284f787a460800000000000000
+      internalID: 7252915209129719928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_47
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bef908ece1f73130800000000000000
+      internalID: 3546569231385099957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_48
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df8385693d8465c40800000000000000
+      internalID: 5500664068477303037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5db277ee0e3924040800000000000000
+      internalID: 4630425961173035989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_50
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11b464cfb36e55000800000000000000
+      internalID: 24178518330329873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_51
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c0227da664e65590800000000000000
+      internalID: -7685704584413437751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpacePlatforms_52
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2b0553daab48f0d0800000000000000
+      internalID: -3388875522534208724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

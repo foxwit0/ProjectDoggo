@@ -308,6 +308,18 @@ TextureImporter:
   - first:
       213: -3388875522534208724
     second: SpacePlatforms_52
+  - first:
+      213: 7861948307801000414
+    second: SpacePlatforms_49
+  - first:
+      213: -5432705377152386770
+    second: SpacePlatforms_50
+  - first:
+      213: -4986422994036800811
+    second: SpacePlatforms_51
+  - first:
+      213: 2107836307488822187
+    second: SpacePlatforms_52
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -396,12 +408,12 @@ TextureImporter:
       name: SpacePlatforms_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 224
+        x: 1
+        y: 239
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -417,12 +429,12 @@ TextureImporter:
       name: SpacePlatforms_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 224
+        x: 35
+        y: 239
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -438,12 +450,12 @@ TextureImporter:
       name: SpacePlatforms_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 224
+        x: 69
+        y: 239
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -459,12 +471,12 @@ TextureImporter:
       name: SpacePlatforms_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 224
+        x: 103
+        y: 239
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -480,12 +492,12 @@ TextureImporter:
       name: SpacePlatforms_4
       rect:
         serializedVersion: 2
-        x: 128
-        y: 224
+        x: 137
+        y: 239
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -501,12 +513,12 @@ TextureImporter:
       name: SpacePlatforms_5
       rect:
         serializedVersion: 2
-        x: 160
-        y: 224
+        x: 171
+        y: 239
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -522,12 +534,12 @@ TextureImporter:
       name: SpacePlatforms_6
       rect:
         serializedVersion: 2
-        x: 192
-        y: 224
+        x: 205
+        y: 239
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -543,12 +555,12 @@ TextureImporter:
       name: SpacePlatforms_7
       rect:
         serializedVersion: 2
-        x: 0
-        y: 192
+        x: 1
+        y: 205
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -564,12 +576,12 @@ TextureImporter:
       name: SpacePlatforms_8
       rect:
         serializedVersion: 2
-        x: 32
-        y: 192
+        x: 35
+        y: 205
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -585,12 +597,12 @@ TextureImporter:
       name: SpacePlatforms_9
       rect:
         serializedVersion: 2
-        x: 64
-        y: 192
+        x: 69
+        y: 205
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -606,12 +618,12 @@ TextureImporter:
       name: SpacePlatforms_10
       rect:
         serializedVersion: 2
-        x: 96
-        y: 192
+        x: 103
+        y: 205
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -627,12 +639,12 @@ TextureImporter:
       name: SpacePlatforms_11
       rect:
         serializedVersion: 2
-        x: 128
-        y: 192
+        x: 137
+        y: 205
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -648,12 +660,12 @@ TextureImporter:
       name: SpacePlatforms_12
       rect:
         serializedVersion: 2
-        x: 160
-        y: 192
+        x: 171
+        y: 205
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -669,12 +681,12 @@ TextureImporter:
       name: SpacePlatforms_13
       rect:
         serializedVersion: 2
-        x: 192
-        y: 192
+        x: 205
+        y: 205
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -690,12 +702,12 @@ TextureImporter:
       name: SpacePlatforms_14
       rect:
         serializedVersion: 2
-        x: 0
-        y: 160
+        x: 1
+        y: 171
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -711,12 +723,12 @@ TextureImporter:
       name: SpacePlatforms_15
       rect:
         serializedVersion: 2
-        x: 32
-        y: 160
+        x: 35
+        y: 171
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -732,12 +744,12 @@ TextureImporter:
       name: SpacePlatforms_16
       rect:
         serializedVersion: 2
-        x: 64
-        y: 160
+        x: 69
+        y: 171
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -753,12 +765,12 @@ TextureImporter:
       name: SpacePlatforms_17
       rect:
         serializedVersion: 2
-        x: 96
-        y: 160
+        x: 103
+        y: 171
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -774,12 +786,12 @@ TextureImporter:
       name: SpacePlatforms_18
       rect:
         serializedVersion: 2
-        x: 128
-        y: 160
+        x: 137
+        y: 171
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -795,12 +807,12 @@ TextureImporter:
       name: SpacePlatforms_19
       rect:
         serializedVersion: 2
-        x: 160
-        y: 160
+        x: 171
+        y: 171
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -816,12 +828,12 @@ TextureImporter:
       name: SpacePlatforms_20
       rect:
         serializedVersion: 2
-        x: 192
-        y: 160
+        x: 205
+        y: 171
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -837,12 +849,12 @@ TextureImporter:
       name: SpacePlatforms_21
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
+        x: 1
+        y: 137
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -858,12 +870,12 @@ TextureImporter:
       name: SpacePlatforms_22
       rect:
         serializedVersion: 2
-        x: 32
-        y: 128
+        x: 35
+        y: 137
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -879,12 +891,12 @@ TextureImporter:
       name: SpacePlatforms_23
       rect:
         serializedVersion: 2
-        x: 64
-        y: 128
+        x: 69
+        y: 137
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -900,12 +912,12 @@ TextureImporter:
       name: SpacePlatforms_24
       rect:
         serializedVersion: 2
-        x: 96
-        y: 128
+        x: 103
+        y: 137
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -921,12 +933,12 @@ TextureImporter:
       name: SpacePlatforms_25
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
+        x: 137
+        y: 137
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -942,12 +954,12 @@ TextureImporter:
       name: SpacePlatforms_26
       rect:
         serializedVersion: 2
-        x: 160
-        y: 128
+        x: 171
+        y: 137
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -963,12 +975,12 @@ TextureImporter:
       name: SpacePlatforms_27
       rect:
         serializedVersion: 2
-        x: 192
-        y: 128
+        x: 205
+        y: 137
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -984,12 +996,12 @@ TextureImporter:
       name: SpacePlatforms_28
       rect:
         serializedVersion: 2
-        x: 0
-        y: 96
+        x: 1
+        y: 103
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1005,12 +1017,12 @@ TextureImporter:
       name: SpacePlatforms_29
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
+        x: 35
+        y: 103
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1026,12 +1038,12 @@ TextureImporter:
       name: SpacePlatforms_30
       rect:
         serializedVersion: 2
-        x: 64
-        y: 96
+        x: 69
+        y: 103
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1047,12 +1059,12 @@ TextureImporter:
       name: SpacePlatforms_31
       rect:
         serializedVersion: 2
-        x: 96
-        y: 96
+        x: 103
+        y: 103
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1068,12 +1080,12 @@ TextureImporter:
       name: SpacePlatforms_32
       rect:
         serializedVersion: 2
-        x: 128
-        y: 96
+        x: 137
+        y: 103
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1089,12 +1101,12 @@ TextureImporter:
       name: SpacePlatforms_33
       rect:
         serializedVersion: 2
-        x: 160
-        y: 96
+        x: 171
+        y: 103
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1110,12 +1122,12 @@ TextureImporter:
       name: SpacePlatforms_34
       rect:
         serializedVersion: 2
-        x: 192
-        y: 96
+        x: 205
+        y: 103
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1131,12 +1143,12 @@ TextureImporter:
       name: SpacePlatforms_35
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
+        x: 1
+        y: 69
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1152,12 +1164,12 @@ TextureImporter:
       name: SpacePlatforms_36
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
+        x: 35
+        y: 69
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1173,12 +1185,12 @@ TextureImporter:
       name: SpacePlatforms_37
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
+        x: 69
+        y: 69
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1194,12 +1206,12 @@ TextureImporter:
       name: SpacePlatforms_38
       rect:
         serializedVersion: 2
-        x: 96
-        y: 64
+        x: 103
+        y: 69
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1215,12 +1227,12 @@ TextureImporter:
       name: SpacePlatforms_39
       rect:
         serializedVersion: 2
-        x: 128
-        y: 64
+        x: 137
+        y: 69
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1236,12 +1248,12 @@ TextureImporter:
       name: SpacePlatforms_40
       rect:
         serializedVersion: 2
-        x: 160
-        y: 64
+        x: 171
+        y: 69
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1257,12 +1269,12 @@ TextureImporter:
       name: SpacePlatforms_41
       rect:
         serializedVersion: 2
-        x: 192
-        y: 64
+        x: 205
+        y: 69
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1278,12 +1290,12 @@ TextureImporter:
       name: SpacePlatforms_42
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
+        x: 1
+        y: 35
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1299,12 +1311,12 @@ TextureImporter:
       name: SpacePlatforms_43
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
+        x: 35
+        y: 35
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1320,12 +1332,12 @@ TextureImporter:
       name: SpacePlatforms_44
       rect:
         serializedVersion: 2
-        x: 64
-        y: 32
+        x: 69
+        y: 35
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1341,12 +1353,12 @@ TextureImporter:
       name: SpacePlatforms_45
       rect:
         serializedVersion: 2
-        x: 96
-        y: 32
+        x: 103
+        y: 35
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1362,12 +1374,12 @@ TextureImporter:
       name: SpacePlatforms_46
       rect:
         serializedVersion: 2
-        x: 128
-        y: 32
+        x: 137
+        y: 35
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1383,12 +1395,12 @@ TextureImporter:
       name: SpacePlatforms_47
       rect:
         serializedVersion: 2
-        x: 160
-        y: 32
+        x: 171
+        y: 35
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1404,12 +1416,12 @@ TextureImporter:
       name: SpacePlatforms_48
       rect:
         serializedVersion: 2
-        x: 192
-        y: 32
+        x: 205
+        y: 35
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1425,19 +1437,19 @@ TextureImporter:
       name: SpacePlatforms_49
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1
+        y: 1
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5db277ee0e3924040800000000000000
-      internalID: 4630425961173035989
+      spriteID: ed946f0e4504b1d60800000000000000
+      internalID: 7861948307801000414
       vertices: []
       indices: 
       edges: []
@@ -1446,19 +1458,19 @@ TextureImporter:
       name: SpacePlatforms_50
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
+        x: 35
+        y: 1
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11b464cfb36e55000800000000000000
-      internalID: 24178518330329873
+      spriteID: e293a714e372b94b0800000000000000
+      internalID: -5432705377152386770
       vertices: []
       indices: 
       edges: []
@@ -1467,19 +1479,19 @@ TextureImporter:
       name: SpacePlatforms_51
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
+        x: 69
+        y: 1
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c0227da664e65590800000000000000
-      internalID: -7685704584413437751
+      spriteID: 5d2c894c4baaccab0800000000000000
+      internalID: -4986422994036800811
       vertices: []
       indices: 
       edges: []
@@ -1488,19 +1500,19 @@ TextureImporter:
       name: SpacePlatforms_52
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
+        x: 103
+        y: 1
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2b0553daab48f0d0800000000000000
-      internalID: -3388875522534208724
+      spriteID: ba3da8034f9804d10800000000000000
+      internalID: 2107836307488822187
       vertices: []
       indices: 
       edges: []
